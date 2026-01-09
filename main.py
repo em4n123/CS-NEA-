@@ -25,7 +25,7 @@ Column_Size = 20
 class Cell:                                    #represents one square in the maze
     def __init__(self):                         
         self.visited = False                   
-        self.walls = [True, True, True, True]  # top, right, bottom, left --- all walls exist by default
+        self.walls = [True, True, True, True]  # top, right, bottom, left (all walls exist by default)
 
 maze = [[Cell() for _ in range(Column_Size)] for _ in range(Row_Size)]    #creates 2D list/grid
 
@@ -113,3 +113,4 @@ while running:
                                             #(done every frame)
 
 pygame.quit()
+
